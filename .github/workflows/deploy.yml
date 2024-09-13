@@ -22,11 +22,11 @@ jobs:
           git clone https://github.com/proxiex/3mtt-webapp.git
           
           sudo apt update
-          apt-get install node
-          apt-get install npm
+          sudo apt-get install node
+          sudo apt-get install npm
 
           cd 3mtt-webapp
-          npm install
-          npm start
+          sudo npm install
+          sudo npm start
 
           ENDSSH
