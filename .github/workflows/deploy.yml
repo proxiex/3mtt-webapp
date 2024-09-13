@@ -21,7 +21,7 @@ jobs:
           sshpass -p '${{ secrets.PSWD }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} <<'ENDSSH'
           git clone https://github.com/proxiex/3mtt-webapp.git
           
-          sudo apt-update
+          sudo apt update
           apt-get install node
           apt-get install npm
 
